@@ -8,14 +8,7 @@ Customer-segment analysis of 183,412 trips, with calendar-normalized demand prof
 
 ## How it works
 
-```mermaid
-flowchart TD
-    N0["Trip timestamps and rider type"] --> N1
-    N1["Validate duration and paired calendar days"] --> N2
-    N2["Compare daily rider-group summaries"] --> N3
-    N3["Bootstrap paired day differences"] --> N4
-    N4["Report uncertainty and missing-day coverage"]
-```
+![Implementation mechanism: Trip timestamps and rider type → Validate duration and paired calendar days → Compare daily rider-group summaries → Bootstrap paired day differences → Report uncertainty and missing-day coverage](assets/mechanism.svg)
 
 ## Try a small example
 
