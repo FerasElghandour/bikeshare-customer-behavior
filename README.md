@@ -1,26 +1,38 @@
-# Ford GoBike: Trip Duration and Riding Patterns
+# Bike-Share Customer Behavior
 
-Explore trip duration and departure timing in February 2019 San Francisco Bay Area bike-share records, then present four focused explanatory charts.
+Subscriber and occasional-customer trips place different demands on a bike-share network. This analysis examines 183,412 trips to compare how long bikes remain in use and when each group rides.
 
-## Completion
+**Python · pandas · NumPy · Matplotlib · seaborn**
 
-Udacity project: **Communicate Data Findings**. Passed on **2026-10-11**, verified against the authenticated Udacity project-pass email. The receipt is kept privately.
+![Median trip duration by customer type and weekday or weekend](assets/analysis.png)
 
-This is a cleaned portfolio edition of the recovered implementation associated with that project. Udacity's email confirms the project passed; it does not certify this Git commit or identify the accepted archive by hash.
+## Results
 
-## Approach
+| Measure | Result |
+|---|---|
+| Trips analyzed | 183,412 |
+| Subscriber share of trips | 89.17% |
+| Median duration: customer / subscriber | 13.20 / 8.17 minutes |
+| Customer median duration: weekday / weekend | 12.40 / 16.05 minutes |
 
-Convert timestamps and duration units, derive weekday/weekend groups and station endpoint separation, compare subgroup medians, and normalize hourly profiles within each user/day-type group. Both notebooks retain all source rows for summaries.
+## Implementation
 
-## Recorded results
+- Prepared timestamps, duration units, ordered user groups and weekday/weekend categories.
+- Compared pooled and subgroup medians to check whether aggregate patterns persist within day types.
+- Normalized departure profiles within each user/day group and adjusted volume comparisons for calendar exposure.
+- Developed exploratory analysis and a focused four-chart presentation using consistent labels, colors and comparison scales.
 
-The saved analysis contains 183,412 trips. Subscribers account for 89.17% of trips. Customer median duration is 13.20 minutes, compared with 8.17 for subscribers. Customer medians rise from 12.40 minutes on weekdays to 16.05 on weekends.
+## Practical relevance
 
-These figures come from saved execution records. Release validation is described in `VALIDATION.md`.
+Demonstrates customer segmentation, operational analytics and the translation of exploratory findings into a concise decision-oriented presentation. Longer customer trips and shared weekday peaks provide starting points for station-level capacity investigations.
 
-## Run
+## Explore the project
 
-Release execution checks used Python 3.14.3; analysis dependency versions are pinned in `requirements.txt`.
+- `Part_I_exploration.ipynb` — preparation, exploratory charts and sensitivity to subgroup definitions.
+- `Part_II_explanatory.ipynb` — four presentation charts and their implications.
+- `DATA.md` — input acquisition and source details.
+
+## Run locally
 
 ```sh
 python -m venv .venv
@@ -29,16 +41,15 @@ python -m pip install -r requirements.txt
 jupyter lab
 ```
 
-After supplying the CSV, open and run `Part_I_exploration.ipynb`, then `Part_II_explanatory.ipynb`, from the repository root.
+Supply `201902-fordgobike-tripdata.csv` as described in `DATA.md`. Run `Part_I_exploration.ipynb`, followed by `Part_II_explanatory.ipynb`, from the repository root.
 
-See [DATA.md](DATA.md) for inputs, attribution and excluded materials. Notebook outputs are cleared in this edition to exclude raw-data previews and machine-specific output.
+See [DATA.md](DATA.md) for required inputs and [VALIDATION.md](VALIDATION.md) for the checks and runtime versions.
 
-## Limitations
+## Scope
 
-One month and one system; rows represent trips rather than unique riders. Endpoint separation is not actual route length. Demographics are not used. These observations do not establish why groups differ or predict other seasons.
+Records cover February 2019 in the San Francisco Bay Area. Rows represent trips, not unique riders. Station endpoint separation is not actual route distance, and the analysis does not establish why the groups differ.
 
-## Provenance and rights
+---
 
-Prepared by Mohamed Feras Elghandour with AI assistance in implementation, debugging, analysis and documentation. This repository does not claim unaided coding or production deployment. Udacity supplied the educational context; third-party tools and inputs retain their own rights. Course lesson text, assessment prompts, rubrics, answer keys, pass-email bodies and authenticated classroom captures are excluded.
-
-No new repository-wide software license is granted in this release. Existing third-party license notices remain applicable; see [DATA.md](DATA.md) and any `third_party/` or `vendor/` notices. This is an educational portfolio project, without a claim of Udacity endorsement.
+**Feras Elghandour** · [GitHub](https://github.com/FerasElghandour)  
+[Attribution and development notes](ATTRIBUTION.md)
