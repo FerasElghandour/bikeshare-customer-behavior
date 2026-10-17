@@ -15,3 +15,10 @@ tmdb-movies.csv
 Database_TMDb_movie_data/
 Tennis_Linux_NoVis/
 *.zip
+
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+reports/
+exports/

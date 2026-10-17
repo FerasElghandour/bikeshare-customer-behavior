@@ -1,0 +1,1610 @@
+{
+  "report": {
+    "title": "Bike-share customer behavior",
+    "subtitle": "Separate customer patterns from the size of the subscriber base.",
+    "category": "Customer analytics / mobility",
+    "findings": [
+      "183,412 valid trips, with explicit quality checks.",
+      "The day-cluster bootstrap estimates a daily median duration gap of 5.06 minutes (95% interval 4.41 to 5.78).",
+      "Within-group timing profiles distinguish behavior from unequal group sizes."
+    ],
+    "views": [
+      {
+        "label": "Weekday: median duration",
+        "kind": "bar",
+        "unit": "minutes",
+        "series": [
+          {
+            "name": "Median trip duration",
+            "points": [
+              {
+                "x": "Customer",
+                "y": 12.4
+              },
+              {
+                "x": "Subscriber",
+                "y": 8.183333333333334
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Weekday: departure profile",
+        "kind": "line",
+        "unit": "% of group trips",
+        "series": [
+          {
+            "name": "Subscriber",
+            "points": [
+              {
+                "x": 0,
+                "y": 0.34936456155832507
+              },
+              {
+                "x": 1,
+                "y": 0.19023370536198653
+              },
+              {
+                "x": 2,
+                "y": 0.13164461739878916
+              },
+              {
+                "x": 3,
+                "y": 0.07233220736197206
+              },
+              {
+                "x": 4,
+                "y": 0.12658136288345112
+              },
+              {
+                "x": 5,
+                "y": 0.5569579966871849
+              },
+              {
+                "x": 6,
+                "y": 2.274124599460402
+              },
+              {
+                "x": 7,
+                "y": 6.893982683669557
+              },
+              {
+                "x": 8,
+                "y": 13.423411042234775
+              },
+              {
+                "x": 9,
+                "y": 9.599930561080933
+              },
+              {
+                "x": 10,
+                "y": 4.041923747386999
+              },
+              {
+                "x": 11,
+                "y": 3.461819444343983
+              },
+              {
+                "x": 12,
+                "y": 3.945721911595576
+              },
+              {
+                "x": 13,
+                "y": 3.539938228294913
+              },
+              {
+                "x": 14,
+                "y": 3.274479027276475
+              },
+              {
+                "x": 15,
+                "y": 4.0701333082581685
+              },
+              {
+                "x": 16,
+                "y": 7.459620545240179
+              },
+              {
+                "x": 17,
+                "y": 12.697195680320577
+              },
+              {
+                "x": 18,
+                "y": 9.936275325314101
+              },
+              {
+                "x": 19,
+                "y": 5.574643221387187
+              },
+              {
+                "x": 20,
+                "y": 3.623120266761181
+              },
+              {
+                "x": 21,
+                "y": 2.428915523215022
+              },
+              {
+                "x": 22,
+                "y": 1.5269328974112304
+              },
+              {
+                "x": 23,
+                "y": 0.8007175354970308
+              }
+            ]
+          },
+          {
+            "name": "Customer",
+            "points": [
+              {
+                "x": 0,
+                "y": 0.41452961427668095
+              },
+              {
+                "x": 1,
+                "y": 0.11944073631700977
+              },
+              {
+                "x": 2,
+                "y": 0.12646666198271622
+              },
+              {
+                "x": 3,
+                "y": 0.04215555399423874
+              },
+              {
+                "x": 4,
+                "y": 0.08431110798847748
+              },
+              {
+                "x": 5,
+                "y": 0.40047776294526805
+              },
+              {
+                "x": 6,
+                "y": 1.370055504812759
+              },
+              {
+                "x": 7,
+                "y": 4.932199817325933
+              },
+              {
+                "x": 8,
+                "y": 11.45928476076723
+              },
+              {
+                "x": 9,
+                "y": 8.143047846553783
+              },
+              {
+                "x": 10,
+                "y": 4.22258132508958
+              },
+              {
+                "x": 11,
+                "y": 4.749525750017565
+              },
+              {
+                "x": 12,
+                "y": 4.946251668657346
+              },
+              {
+                "x": 13,
+                "y": 4.826810932340336
+              },
+              {
+                "x": 14,
+                "y": 4.868966486334574
+              },
+              {
+                "x": 15,
+                "y": 5.943933113187662
+              },
+              {
+                "x": 16,
+                "y": 8.31167006253074
+              },
+              {
+                "x": 17,
+                "y": 13.623269865804819
+              },
+              {
+                "x": 18,
+                "y": 9.014262629101385
+              },
+              {
+                "x": 19,
+                "y": 4.7073701960233265
+              },
+              {
+                "x": 20,
+                "y": 3.01412211058807
+              },
+              {
+                "x": 21,
+                "y": 2.1639851050375887
+              },
+              {
+                "x": 22,
+                "y": 1.6089369774467788
+              },
+              {
+                "x": 23,
+                "y": 0.906344410876133
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Weekend: median duration",
+        "kind": "bar",
+        "unit": "minutes",
+        "series": [
+          {
+            "name": "Median trip duration",
+            "points": [
+              {
+                "x": "Customer",
+                "y": 16.05
+              },
+              {
+                "x": "Subscriber",
+                "y": 8.133333333333333
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Weekend: departure profile",
+        "kind": "line",
+        "unit": "% of group trips",
+        "series": [
+          {
+            "name": "Subscriber",
+            "points": [
+              {
+                "x": 0,
+                "y": 1.3086624757838137
+              },
+              {
+                "x": 1,
+                "y": 0.9093425058316531
+              },
+              {
+                "x": 2,
+                "y": 0.5614201557743249
+              },
+              {
+                "x": 3,
+                "y": 0.22931245799232988
+              },
+              {
+                "x": 4,
+                "y": 0.15419285968449767
+              },
+              {
+                "x": 5,
+                "y": 0.20163681651049697
+              },
+              {
+                "x": 6,
+                "y": 0.5574664927054916
+              },
+              {
+                "x": 7,
+                "y": 1.3165698019214804
+              },
+              {
+                "x": 8,
+                "y": 2.9652473016249554
+              },
+              {
+                "x": 9,
+                "y": 4.997430119005259
+              },
+              {
+                "x": 10,
+                "y": 7.0256592733167285
+              },
+              {
+                "x": 11,
+                "y": 7.6226623967105525
+              },
+              {
+                "x": 12,
+                "y": 8.089194638832879
+              },
+              {
+                "x": 13,
+                "y": 8.9234175463567
+              },
+              {
+                "x": 14,
+                "y": 8.927371209425534
+              },
+              {
+                "x": 15,
+                "y": 8.401534021270706
+              },
+              {
+                "x": 16,
+                "y": 8.365951053651207
+              },
+              {
+                "x": 17,
+                "y": 7.80057723480805
+              },
+              {
+                "x": 18,
+                "y": 6.223065670343574
+              },
+              {
+                "x": 19,
+                "y": 5.270232870754754
+              },
+              {
+                "x": 20,
+                "y": 3.6215553710512793
+              },
+              {
+                "x": 21,
+                "y": 3.1510694658601195
+              },
+              {
+                "x": 22,
+                "y": 2.020321828173803
+              },
+              {
+                "x": 23,
+                "y": 1.3561064326098131
+              }
+            ]
+          },
+          {
+            "name": "Customer",
+            "points": [
+              {
+                "x": 0,
+                "y": 0.9228039041703637
+              },
+              {
+                "x": 1,
+                "y": 0.6743566992014197
+              },
+              {
+                "x": 2,
+                "y": 0.6921029281277729
+              },
+              {
+                "x": 3,
+                "y": 0.1774622892635315
+              },
+              {
+                "x": 4,
+                "y": 0.15971606033717836
+              },
+              {
+                "x": 5,
+                "y": 0.3194321206743567
+              },
+              {
+                "x": 6,
+                "y": 0.08873114463176575
+              },
+              {
+                "x": 7,
+                "y": 0.8518189884649512
+              },
+              {
+                "x": 8,
+                "y": 2.076308784383319
+              },
+              {
+                "x": 9,
+                "y": 3.691215616681455
+              },
+              {
+                "x": 10,
+                "y": 7.062999112688553
+              },
+              {
+                "x": 11,
+                "y": 8.766637089618456
+              },
+              {
+                "x": 12,
+                "y": 9.210292812777285
+              },
+              {
+                "x": 13,
+                "y": 12.653061224489795
+              },
+              {
+                "x": 14,
+                "y": 11.960958296362023
+              },
+              {
+                "x": 15,
+                "y": 10.221827861579415
+              },
+              {
+                "x": 16,
+                "y": 9.884649511978704
+              },
+              {
+                "x": 17,
+                "y": 7.062999112688553
+              },
+              {
+                "x": 18,
+                "y": 4.134871339840284
+              },
+              {
+                "x": 19,
+                "y": 3.034605146406389
+              },
+              {
+                "x": 20,
+                "y": 2.271517302573203
+              },
+              {
+                "x": 21,
+                "y": 1.7391304347826086
+              },
+              {
+                "x": 22,
+                "y": 1.1535048802129548
+              },
+              {
+                "x": 23,
+                "y": 1.188997338065661
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "methodology": [
+      {
+        "title": "Calendar-aware comparison",
+        "body": "Daily volumes use the full observed calendar interval, including any zero-trip dates. Duration comparisons retain all valid trips."
+      },
+      {
+        "title": "Uncertainty with a defined estimand",
+        "body": "2,000 fixed-seed resamples of paired dates estimate the mean difference between daily category medians. This is not the pooled trip median difference."
+      },
+      {
+        "title": "Decision boundary",
+        "body": "Use the results to investigate station capacity and duration patterns. One month of observational trips does not prove user intent, a causal membership effect or unique-customer behavior."
+      }
+    ],
+    "notes": "Only aggregate summaries are embedded. Input trips and demographic fields are not published."
+  },
+  "results": {
+    "audit": {
+      "input_rows": 183412,
+      "valid_rows": 183412,
+      "excluded_invalid_rows": 0,
+      "duplicate_input_rows": 0,
+      "elapsed_difference_max_abs_sec": 0.9990000000000236
+    },
+    "calendar_days": {
+      "Weekday": 20,
+      "Weekend": 8
+    },
+    "period": [
+      "2019-02-01",
+      "2019-02-28"
+    ],
+    "overall": [
+      {
+        "user_type": "Customer",
+        "size": 19868,
+        "median": 13.2
+      },
+      {
+        "user_type": "Subscriber",
+        "size": 163544,
+        "median": 8.166666666666666
+      }
+    ],
+    "segments": [
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "size": 14233,
+        "median": 12.4,
+        "mean": 21.213526077894095,
+        "trips_per_calendar_day": 711.65
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "size": 5635,
+        "median": 16.05,
+        "mean": 30.595350488021293,
+        "trips_per_calendar_day": 704.375
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "size": 138251,
+        "median": 8.183333333333334,
+        "mean": 10.472841064440763,
+        "trips_per_calendar_day": 6912.55
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "size": 25293,
+        "median": 8.133333333333333,
+        "mean": 11.754528921045347,
+        "trips_per_calendar_day": 3161.625
+      }
+    ],
+    "hourly": [
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 0,
+        "trips": 59,
+        "share_percent": 0.41452961427668095
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 1,
+        "trips": 17,
+        "share_percent": 0.11944073631700977
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 2,
+        "trips": 18,
+        "share_percent": 0.12646666198271622
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 3,
+        "trips": 6,
+        "share_percent": 0.04215555399423874
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 4,
+        "trips": 12,
+        "share_percent": 0.08431110798847748
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 5,
+        "trips": 57,
+        "share_percent": 0.40047776294526805
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 6,
+        "trips": 195,
+        "share_percent": 1.370055504812759
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 7,
+        "trips": 702,
+        "share_percent": 4.932199817325933
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 8,
+        "trips": 1631,
+        "share_percent": 11.45928476076723
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 9,
+        "trips": 1159,
+        "share_percent": 8.143047846553783
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 10,
+        "trips": 601,
+        "share_percent": 4.22258132508958
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 11,
+        "trips": 676,
+        "share_percent": 4.749525750017565
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 12,
+        "trips": 704,
+        "share_percent": 4.946251668657346
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 13,
+        "trips": 687,
+        "share_percent": 4.826810932340336
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 14,
+        "trips": 693,
+        "share_percent": 4.868966486334574
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 15,
+        "trips": 846,
+        "share_percent": 5.943933113187662
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 16,
+        "trips": 1183,
+        "share_percent": 8.31167006253074
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 17,
+        "trips": 1939,
+        "share_percent": 13.623269865804819
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 18,
+        "trips": 1283,
+        "share_percent": 9.014262629101385
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 19,
+        "trips": 670,
+        "share_percent": 4.7073701960233265
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 20,
+        "trips": 429,
+        "share_percent": 3.01412211058807
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 21,
+        "trips": 308,
+        "share_percent": 2.1639851050375887
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 22,
+        "trips": 229,
+        "share_percent": 1.6089369774467788
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekday",
+        "hour": 23,
+        "trips": 129,
+        "share_percent": 0.906344410876133
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 0,
+        "trips": 52,
+        "share_percent": 0.9228039041703637
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 1,
+        "trips": 38,
+        "share_percent": 0.6743566992014197
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 2,
+        "trips": 39,
+        "share_percent": 0.6921029281277729
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 3,
+        "trips": 10,
+        "share_percent": 0.1774622892635315
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 4,
+        "trips": 9,
+        "share_percent": 0.15971606033717836
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 5,
+        "trips": 18,
+        "share_percent": 0.3194321206743567
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 6,
+        "trips": 5,
+        "share_percent": 0.08873114463176575
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 7,
+        "trips": 48,
+        "share_percent": 0.8518189884649512
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 8,
+        "trips": 117,
+        "share_percent": 2.076308784383319
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 9,
+        "trips": 208,
+        "share_percent": 3.691215616681455
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 10,
+        "trips": 398,
+        "share_percent": 7.062999112688553
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 11,
+        "trips": 494,
+        "share_percent": 8.766637089618456
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 12,
+        "trips": 519,
+        "share_percent": 9.210292812777285
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 13,
+        "trips": 713,
+        "share_percent": 12.653061224489795
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 14,
+        "trips": 674,
+        "share_percent": 11.960958296362023
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 15,
+        "trips": 576,
+        "share_percent": 10.221827861579415
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 16,
+        "trips": 557,
+        "share_percent": 9.884649511978704
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 17,
+        "trips": 398,
+        "share_percent": 7.062999112688553
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 18,
+        "trips": 233,
+        "share_percent": 4.134871339840284
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 19,
+        "trips": 171,
+        "share_percent": 3.034605146406389
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 20,
+        "trips": 128,
+        "share_percent": 2.271517302573203
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 21,
+        "trips": 98,
+        "share_percent": 1.7391304347826086
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 22,
+        "trips": 65,
+        "share_percent": 1.1535048802129548
+      },
+      {
+        "user_type": "Customer",
+        "day_type": "Weekend",
+        "hour": 23,
+        "trips": 67,
+        "share_percent": 1.188997338065661
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 0,
+        "trips": 483,
+        "share_percent": 0.34936456155832507
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 1,
+        "trips": 263,
+        "share_percent": 0.19023370536198653
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 2,
+        "trips": 182,
+        "share_percent": 0.13164461739878916
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 3,
+        "trips": 100,
+        "share_percent": 0.07233220736197206
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 4,
+        "trips": 175,
+        "share_percent": 0.12658136288345112
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 5,
+        "trips": 770,
+        "share_percent": 0.5569579966871849
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 6,
+        "trips": 3144,
+        "share_percent": 2.274124599460402
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 7,
+        "trips": 9531,
+        "share_percent": 6.893982683669557
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 8,
+        "trips": 18558,
+        "share_percent": 13.423411042234775
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 9,
+        "trips": 13272,
+        "share_percent": 9.599930561080933
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 10,
+        "trips": 5588,
+        "share_percent": 4.041923747386999
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 11,
+        "trips": 4786,
+        "share_percent": 3.461819444343983
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 12,
+        "trips": 5455,
+        "share_percent": 3.945721911595576
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 13,
+        "trips": 4894,
+        "share_percent": 3.539938228294913
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 14,
+        "trips": 4527,
+        "share_percent": 3.274479027276475
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 15,
+        "trips": 5627,
+        "share_percent": 4.0701333082581685
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 16,
+        "trips": 10313,
+        "share_percent": 7.459620545240179
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 17,
+        "trips": 17554,
+        "share_percent": 12.697195680320577
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 18,
+        "trips": 13737,
+        "share_percent": 9.936275325314101
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 19,
+        "trips": 7707,
+        "share_percent": 5.574643221387187
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 20,
+        "trips": 5009,
+        "share_percent": 3.623120266761181
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 21,
+        "trips": 3358,
+        "share_percent": 2.428915523215022
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 22,
+        "trips": 2111,
+        "share_percent": 1.5269328974112304
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekday",
+        "hour": 23,
+        "trips": 1107,
+        "share_percent": 0.8007175354970308
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 0,
+        "trips": 331,
+        "share_percent": 1.3086624757838137
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 1,
+        "trips": 230,
+        "share_percent": 0.9093425058316531
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 2,
+        "trips": 142,
+        "share_percent": 0.5614201557743249
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 3,
+        "trips": 58,
+        "share_percent": 0.22931245799232988
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 4,
+        "trips": 39,
+        "share_percent": 0.15419285968449767
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 5,
+        "trips": 51,
+        "share_percent": 0.20163681651049697
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 6,
+        "trips": 141,
+        "share_percent": 0.5574664927054916
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 7,
+        "trips": 333,
+        "share_percent": 1.3165698019214804
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 8,
+        "trips": 750,
+        "share_percent": 2.9652473016249554
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 9,
+        "trips": 1264,
+        "share_percent": 4.997430119005259
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 10,
+        "trips": 1777,
+        "share_percent": 7.0256592733167285
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 11,
+        "trips": 1928,
+        "share_percent": 7.6226623967105525
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 12,
+        "trips": 2046,
+        "share_percent": 8.089194638832879
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 13,
+        "trips": 2257,
+        "share_percent": 8.9234175463567
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 14,
+        "trips": 2258,
+        "share_percent": 8.927371209425534
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 15,
+        "trips": 2125,
+        "share_percent": 8.401534021270706
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 16,
+        "trips": 2116,
+        "share_percent": 8.365951053651207
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 17,
+        "trips": 1973,
+        "share_percent": 7.80057723480805
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 18,
+        "trips": 1574,
+        "share_percent": 6.223065670343574
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 19,
+        "trips": 1333,
+        "share_percent": 5.270232870754754
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 20,
+        "trips": 916,
+        "share_percent": 3.6215553710512793
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 21,
+        "trips": 797,
+        "share_percent": 3.1510694658601195
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 22,
+        "trips": 511,
+        "share_percent": 2.020321828173803
+      },
+      {
+        "user_type": "Subscriber",
+        "day_type": "Weekend",
+        "hour": 23,
+        "trips": 343,
+        "share_percent": 1.3561064326098131
+      }
+    ],
+    "daily_gap": {
+      "available": true,
+      "paired_days": 28,
+      "estimate_minutes": 5.064583333333333,
+      "ci95_minutes": [
+        4.406361607142857,
+        5.783363095238096
+      ],
+      "draws": 2000,
+      "seed": 42,
+      "estimand": "Mean daily customer median minus mean daily subscriber median",
+      "scope": "Day resampling does not remove serial dependence or identify unique riders."
+    },
+    "daily": [
+      {
+        "date": "2019-02-01",
+        "user_type": "Customer",
+        "trips": 580,
+        "median_minutes": 12.116666666666667
+      },
+      {
+        "date": "2019-02-01",
+        "user_type": "Subscriber",
+        "trips": 5553,
+        "median_minutes": 8.016666666666667
+      },
+      {
+        "date": "2019-02-02",
+        "user_type": "Customer",
+        "trips": 500,
+        "median_minutes": 14.433333333333334
+      },
+      {
+        "date": "2019-02-02",
+        "user_type": "Subscriber",
+        "trips": 2731,
+        "median_minutes": 7.9
+      },
+      {
+        "date": "2019-02-03",
+        "user_type": "Customer",
+        "trips": 380,
+        "median_minutes": 13.216666666666665
+      },
+      {
+        "date": "2019-02-03",
+        "user_type": "Subscriber",
+        "trips": 2461,
+        "median_minutes": 7.516666666666667
+      },
+      {
+        "date": "2019-02-04",
+        "user_type": "Customer",
+        "trips": 449,
+        "median_minutes": 11.466666666666667
+      },
+      {
+        "date": "2019-02-04",
+        "user_type": "Subscriber",
+        "trips": 5042,
+        "median_minutes": 7.6
+      },
+      {
+        "date": "2019-02-05",
+        "user_type": "Customer",
+        "trips": 687,
+        "median_minutes": 11.45
+      },
+      {
+        "date": "2019-02-05",
+        "user_type": "Subscriber",
+        "trips": 7799,
+        "median_minutes": 8.083333333333334
+      },
+      {
+        "date": "2019-02-06",
+        "user_type": "Customer",
+        "trips": 719,
+        "median_minutes": 11.25
+      },
+      {
+        "date": "2019-02-06",
+        "user_type": "Subscriber",
+        "trips": 8338,
+        "median_minutes": 8.125
+      },
+      {
+        "date": "2019-02-07",
+        "user_type": "Customer",
+        "trips": 831,
+        "median_minutes": 12.333333333333334
+      },
+      {
+        "date": "2019-02-07",
+        "user_type": "Subscriber",
+        "trips": 8403,
+        "median_minutes": 8.283333333333333
+      },
+      {
+        "date": "2019-02-08",
+        "user_type": "Customer",
+        "trips": 587,
+        "median_minutes": 11.666666666666666
+      },
+      {
+        "date": "2019-02-08",
+        "user_type": "Subscriber",
+        "trips": 5769,
+        "median_minutes": 8.116666666666667
+      },
+      {
+        "date": "2019-02-09",
+        "user_type": "Customer",
+        "trips": 369,
+        "median_minutes": 14.033333333333333
+      },
+      {
+        "date": "2019-02-09",
+        "user_type": "Subscriber",
+        "trips": 2361,
+        "median_minutes": 7.783333333333333
+      },
+      {
+        "date": "2019-02-10",
+        "user_type": "Customer",
+        "trips": 648,
+        "median_minutes": 16.71666666666667
+      },
+      {
+        "date": "2019-02-10",
+        "user_type": "Subscriber",
+        "trips": 3312,
+        "median_minutes": 7.983333333333333
+      },
+      {
+        "date": "2019-02-11",
+        "user_type": "Customer",
+        "trips": 706,
+        "median_minutes": 12.941666666666666
+      },
+      {
+        "date": "2019-02-11",
+        "user_type": "Subscriber",
+        "trips": 7975,
+        "median_minutes": 8.35
+      },
+      {
+        "date": "2019-02-12",
+        "user_type": "Customer",
+        "trips": 692,
+        "median_minutes": 12.3
+      },
+      {
+        "date": "2019-02-12",
+        "user_type": "Subscriber",
+        "trips": 7781,
+        "median_minutes": 8.183333333333334
+      },
+      {
+        "date": "2019-02-13",
+        "user_type": "Customer",
+        "trips": 192,
+        "median_minutes": 9.766666666666667
+      },
+      {
+        "date": "2019-02-13",
+        "user_type": "Subscriber",
+        "trips": 3010,
+        "median_minutes": 7.633333333333334
+      },
+      {
+        "date": "2019-02-14",
+        "user_type": "Customer",
+        "trips": 591,
+        "median_minutes": 10.766666666666667
+      },
+      {
+        "date": "2019-02-14",
+        "user_type": "Subscriber",
+        "trips": 6007,
+        "median_minutes": 8.2
+      },
+      {
+        "date": "2019-02-15",
+        "user_type": "Customer",
+        "trips": 783,
+        "median_minutes": 12.766666666666667
+      },
+      {
+        "date": "2019-02-15",
+        "user_type": "Subscriber",
+        "trips": 6505,
+        "median_minutes": 8.333333333333334
+      },
+      {
+        "date": "2019-02-16",
+        "user_type": "Customer",
+        "trips": 723,
+        "median_minutes": 15.716666666666667
+      },
+      {
+        "date": "2019-02-16",
+        "user_type": "Subscriber",
+        "trips": 3270,
+        "median_minutes": 8.116666666666667
+      },
+      {
+        "date": "2019-02-17",
+        "user_type": "Customer",
+        "trips": 1025,
+        "median_minutes": 18.166666666666668
+      },
+      {
+        "date": "2019-02-17",
+        "user_type": "Subscriber",
+        "trips": 3200,
+        "median_minutes": 8.308333333333334
+      },
+      {
+        "date": "2019-02-18",
+        "user_type": "Customer",
+        "trips": 1008,
+        "median_minutes": 16.791666666666668
+      },
+      {
+        "date": "2019-02-18",
+        "user_type": "Subscriber",
+        "trips": 4639,
+        "median_minutes": 8.383333333333333
+      },
+      {
+        "date": "2019-02-19",
+        "user_type": "Customer",
+        "trips": 870,
+        "median_minutes": 12.75
+      },
+      {
+        "date": "2019-02-19",
+        "user_type": "Subscriber",
+        "trips": 8597,
+        "median_minutes": 8.516666666666667
+      },
+      {
+        "date": "2019-02-20",
+        "user_type": "Customer",
+        "trips": 974,
+        "median_minutes": 13.066666666666666
+      },
+      {
+        "date": "2019-02-20",
+        "user_type": "Subscriber",
+        "trips": 8693,
+        "median_minutes": 8.366666666666667
+      },
+      {
+        "date": "2019-02-21",
+        "user_type": "Customer",
+        "trips": 987,
+        "median_minutes": 12.666666666666666
+      },
+      {
+        "date": "2019-02-21",
+        "user_type": "Subscriber",
+        "trips": 8549,
+        "median_minutes": 8.25
+      },
+      {
+        "date": "2019-02-22",
+        "user_type": "Customer",
+        "trips": 1080,
+        "median_minutes": 13.533333333333335
+      },
+      {
+        "date": "2019-02-22",
+        "user_type": "Subscriber",
+        "trips": 8124,
+        "median_minutes": 8.416666666666666
+      },
+      {
+        "date": "2019-02-23",
+        "user_type": "Customer",
+        "trips": 1147,
+        "median_minutes": 16.7
+      },
+      {
+        "date": "2019-02-23",
+        "user_type": "Subscriber",
+        "trips": 4304,
+        "median_minutes": 8.666666666666666
+      },
+      {
+        "date": "2019-02-24",
+        "user_type": "Customer",
+        "trips": 843,
+        "median_minutes": 15.85
+      },
+      {
+        "date": "2019-02-24",
+        "user_type": "Subscriber",
+        "trips": 3654,
+        "median_minutes": 8.341666666666667
+      },
+      {
+        "date": "2019-02-25",
+        "user_type": "Customer",
+        "trips": 578,
+        "median_minutes": 11.166666666666668
+      },
+      {
+        "date": "2019-02-25",
+        "user_type": "Subscriber",
+        "trips": 6455,
+        "median_minutes": 7.9
+      },
+      {
+        "date": "2019-02-26",
+        "user_type": "Customer",
+        "trips": 357,
+        "median_minutes": 11.266666666666667
+      },
+      {
+        "date": "2019-02-26",
+        "user_type": "Subscriber",
+        "trips": 5030,
+        "median_minutes": 7.666666666666667
+      },
+      {
+        "date": "2019-02-27",
+        "user_type": "Customer",
+        "trips": 581,
+        "median_minutes": 11.6
+      },
+      {
+        "date": "2019-02-27",
+        "user_type": "Subscriber",
+        "trips": 7134,
+        "median_minutes": 8.183333333333334
+      },
+      {
+        "date": "2019-02-28",
+        "user_type": "Customer",
+        "trips": 981,
+        "median_minutes": 12.866666666666667
+      },
+      {
+        "date": "2019-02-28",
+        "user_type": "Subscriber",
+        "trips": 8848,
+        "median_minutes": 8.333333333333334
+      }
+    ]
+  },
+  "provenance": {
+    "python": "3.14.3",
+    "dependencies": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.1"
+    },
+    "code": [
+      {
+        "path": "src/mobility_customers/__init__.py",
+        "sha256": "98522e345d8bbf781d16a508f3a8787687259c2de763d67b92a1f6acb37e2ea9"
+      },
+      {
+        "path": "src/mobility_customers/__main__.py",
+        "sha256": "b7f27ed274a0379335a47ee4a79d6649e134c077dc34b804cd82b0df475d2feb"
+      },
+      {
+        "path": "src/mobility_customers/analysis.py",
+        "sha256": "87ff853ff5973012c789af1ee7b3f2305a31db1a0ffa75baf6b1f28898e53123"
+      },
+      {
+        "path": "src/mobility_customers/reporting.py",
+        "sha256": "969bb41ff9405f5f1d0736546e6486bb42418327cff1d0e0954b7ab9ca9cc654"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "201902-fordgobike-tripdata.csv",
+        "sha256": "76399c4f86ef0809e7209eb9b7f772c9ac22d894a17316ce09c79813a039354a",
+        "bytes": 39422395
+      }
+    ]
+  }
+}
