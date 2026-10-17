@@ -51,5 +51,4 @@ Records cover February 2019 in the San Francisco Bay Area. Rows represent trips,
 
 ---
 
-**Feras Elghandour** · [GitHub](https://github.com/FerasElghandour)  
-[Attribution and development notes](ATTRIBUTION.md)
+**Feras Elghandour** · [GitHub](https://github.com/FerasElghandour)
