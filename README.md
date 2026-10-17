@@ -6,6 +6,57 @@ Customer-segment analysis of 183,412 trips, with calendar-normalized demand prof
 
 [![Quality checks](https://github.com/FerasElghandour/bikeshare-customer-behavior/actions/workflows/ci.yml/badge.svg)](https://github.com/FerasElghandour/bikeshare-customer-behavior/actions/workflows/ci.yml)
 
+## How it works
+
+```mermaid
+flowchart TD
+    N0["Trip timestamps and rider type"] --> N1
+    N1["Validate duration and paired calendar days"] --> N2
+    N2["Compare daily rider-group summaries"] --> N3
+    N3["Bootstrap paired day differences"] --> N4
+    N4["Report uncertainty and missing-day coverage"]
+```
+
+## Try a small example
+
+A small offline fixture exercises the public implementation. It demonstrates the behavior shown below; it does not replace the historical dataset, benchmark or production validation.
+
+After the local setup below, run from the repository root:
+
+```sh
+python examples/quickstart.py
+```
+
+The [example source](examples/quickstart.py), [captured output](examples/expected-output.txt) and [execution record](examples/environment.json) keep this demonstration inspectable. Floating-point values may vary with library versions.
+
+Observed output from this run:
+
+```text
+{
+  "fixture": "six generated trips, not historical estimate",
+  "audit": {
+    "input_rows": 6,
+    "valid_rows": 6,
+    "excluded_invalid_rows": 0,
+    "duplicate_input_rows": 0,
+    "elapsed_difference_max_abs_sec": 0.0
+  },
+  "gap": {
+    "available": true,
+    "paired_days": 3,
+    "estimate_minutes": 10.0,
+    "ci95_minutes": [
+      10.0,
+      10.0
+    ],
+    "draws": 100,
+    "seed": 42,
+    "estimand": "Mean daily customer median minus mean daily subscriber median",
+    "scope": "Day resampling does not remove serial dependence or identify unique riders."
+  }
+}
+```
+
 ## What the evidence shows
 
 Customer trips last longer across weekday and weekend contexts. Resampling paired dates gives a **5.06-minute mean daily median gap**, with a **95% percentile interval of 4.41–5.78 minutes**.
